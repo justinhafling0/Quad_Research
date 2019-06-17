@@ -1,4 +1,4 @@
-function data = RC_Benchmark_Processing()
+function data = RCBenchmark_Processing()
 %{
 
     These are the settings for running this program and how they will
