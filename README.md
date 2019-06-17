@@ -1,2 +1,11 @@
-Some matlab scripts that I have written to analyze the data obtained. Hopefully code is commented enough that it is
-easily understood what needs to be modified in order to control what the program produces as output.
+# README.md
+
+## Matlab Analysis
+
+##### RCBenchmark_Analysis
+This script is responsible for taking the data in the form of the RCBenchmark output (.csv), and clean and crop the data to analyze the relationship between thrust and rpm.
+- Thrust vs Time
+- RPM vs Time
+- Thrust vs RPM
+- Thrust vs Rad / S
+
