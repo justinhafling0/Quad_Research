@@ -1,4 +1,4 @@
-function data = RCBenchmark_Processing()
+function data = RCBenchmark_Analysis()
 %{
 
     These are the settings for running this program and how they will
@@ -66,7 +66,7 @@ function data = RCBenchmark_Processing()
     plotPrecision = 0;
     plotStatistics = 1;
     
-    plotMode = 2;
+    plotMode = 0;
    
     
     prefixes = strings(0);
@@ -217,7 +217,7 @@ function data = RCBenchmark_Processing()
            
                 fprintf(fileID, "%10s %10s %10s %10s\r\n", filename, spacer, spacer, spacer);
                 for j = 2:length(plotX)
-                    if(plotX(j-1) <= plotX(j) + 150 && plotX(j-1) >= plotX(j) - 150)
+                    if((plotX(j-1) <= plotX(j) + 100 && plotX(j-1) >= plotX(j) - 100) && j ~= length(plotX))
                         plotCounter = plotCounter + 1;
                         runningTotalPlotX = runningTotalPlotX + plotX(j);
                         runningTotalPlotY = runningTotalPlotY + plotY(j);
